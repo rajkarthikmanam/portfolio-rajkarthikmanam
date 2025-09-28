@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Raj Karthik Manam • Portfolio</title>
-  <meta name="description" content="AIBA Master's @ USF • TA (Python) • ML/DL/NLP • Java, Python, C • Projects across CV, NLP, analytics, and backend." />
+  <meta name="description" content="AIBA Master's @ USF • TA (Python) • ML/DL/NLP • Java, Python, C • SQL • Tableau/Power BI." />
   <style>
     :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#38bdf8; --line:#1f2937; }
     *{box-sizing:border-box}
@@ -21,13 +21,11 @@
     footer{margin:40px 0;color:var(--muted);font-size:14px;text-align:center}
     .btn{display:inline-block;background:var(--accent);color:#00121a;padding:10px 14px;border-radius:10px;font-weight:600}
     .btn:hover{filter:brightness(1.05);text-decoration:none}
-    h1,h2{margin:0 0 8px}
-    h3{margin:8px 0}
+    h1,h2{margin:0 0 8px} h3{margin:8px 0}
     section{padding:28px 0;border-bottom:1px solid var(--line)}
     .subtitle{color:var(--muted);font-size:14px;margin-top:-4px}
     .row{display:flex;flex-wrap:wrap;gap:16px}
     .row .half{flex:1 1 420px}
-    img.card-img{width:100%;border-radius:12px;display:block}
     @media (prefers-reduced-motion:no-preference){
       .card{transition:transform .2s ease, box-shadow .2s ease}
       .card:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,0.25)}
@@ -39,7 +37,7 @@
     <header>
       <div>
         <h1>Raj Karthik Manam</h1>
-        <div class="subtitle">AIBA Master’s @ USF • TA (Python for Business) • ML / DL / NLP • Java • Python • C</div>
+        <div class="subtitle">AIBA Master’s @ USF • TA (Python for Business) • ML / DL / NLP • Java • Python • C • SQL</div>
       </div>
       <nav>
         <a href="#about">About</a>
@@ -57,17 +55,17 @@
         <div class="half">
           <p style="color:#9ca3af">
             I’m a Master’s student in <strong>Artificial Intelligence & Business Analytics</strong> at the University of South Florida and a
-            <strong>Teaching Assistant for Python for Business</strong>. I design and build ML systems end-to-end—curating data, training and evaluating
-            models (CNNs, transformer-based NLP, classical ML), and packaging results into simple APIs or clear visuals that people can use.
+            <strong>Teaching Assistant for Python for Business</strong>. I design and build ML solutions end-to-end—preparing data, training and evaluating
+            models (CNNs, transformer-based NLP, classical ML), and delivering results through simple APIs or clear dashboards.
           </p>
           <p style="color:#9ca3af">
             I write production-quality code in <strong>Java</strong>, <strong>Python</strong>, and <strong>C</strong>, with working knowledge of <strong>R</strong> and <strong>C#</strong>.
-            My work spans <strong>computer vision</strong>, <strong>NLP</strong>, and <strong>predictive analytics</strong>. I care as much about clean, reproducible
-            experiments as I do about model accuracy—and I’m happiest taking a problem from idea → prototype → shipped solution.
+            I’m comfortable with <strong>SQL</strong> (data querying, joins, analytics pipelines) and visualization in <strong>Tableau</strong> and <strong>Power BI</strong>.
+            I care about clean, reproducible experiments and shipping solutions that people actually use.
           </p>
           <p style="color:#9ca3af">
-            I bring strong math and problem-solving, clear communication from my TA role, and a builder’s mindset. I’m looking for roles where I can
-            turn data and modern ML into products that make decisions faster and better.
+            I bring strong <strong>mathematical aptitude</strong> and <strong>logical problem-solving</strong>, plus a solid grounding in <strong>cryptography fundamentals</strong> that
+            informs my view on data security. I’m looking for roles where I can turn data and modern ML into products that make decisions faster and better.
           </p>
           <p>
             <a class="btn" href="https://github.com/rajkarthikmanam" target="_blank" rel="noopener">GitHub Profile</a>
@@ -76,26 +74,15 @@
           </p>
         </div>
         <div class="half">
-          <!-- Optional hero visuals; add your own assets in /images if you want -->
-          <div class="cards">
-            <!-- <div class="card"><img class="card-img" src="images/cv.jpg" alt="Computer Vision"></div>
-            <div class="card"><img class="card-img" src="images/nlp.jpg" alt="Natural Language Processing"></div> -->
-            <div class="card"><p class="subtitle">Open to ML Engineer / Data Scientist / NLP roles</p></div>
-          </div>
+          <div class="card"><p class="subtitle">Open to ML Engineer / Data Scientist / NLP roles</p></div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS (only key links; no long list) -->
+    <!-- PROJECTS (only repos with links) -->
     <section id="projects">
       <h2>Projects</h2>
       <div class="cards">
-        <article class="card">
-          <h3>ML & DL Portfolio (Selected)</h3>
-          <p>Hands-on work across computer vision (CNNs, transfer learning), NLP (sequence modeling), and predictive analytics.</p>
-          <div><span class="chip">Computer Vision</span><span class="chip">NLP</span><span class="chip">Predictive ML</span></div>
-        </article>
-
         <article class="card">
           <h3>Next-Word Prediction (NLP)</h3>
           <p>Language model that predicts the next word from context; tokenization, training, evaluation.</p>
@@ -111,7 +98,7 @@
         </article>
 
         <article class="card">
-          <h3>US Education & Economic Analysis</h3>
+          <h3>US Education &amp; Economic Analysis</h3>
           <p>Interactive dashboards connecting education, income, and unemployment (AIBA course project).</p>
           <p><a href="https://github.com/rajkarthikmanam/us-education-economic-analysis" target="_blank" rel="noopener">View on GitHub →</a></p>
           <div><span class="chip">Tableau</span><span class="chip">Data Viz</span></div>
@@ -119,20 +106,21 @@
       </div>
     </section>
 
-    <!-- SKILLS (compact, recruiter-friendly) -->
+    <!-- SKILLS -->
     <section id="skills">
       <h2>Skills</h2>
       <div class="cards">
         <div class="card">
-          <h3>Languages</h3>
+          <h3>Programming</h3>
           <p class="chip">Java</p>
           <p class="chip">Python</p>
           <p class="chip">C</p>
           <p class="chip">R (working)</p>
           <p class="chip">C# (working)</p>
+          <p class="chip">SQL</p>
         </div>
         <div class="card">
-          <h3>ML & Data</h3>
+          <h3>ML &amp; Data</h3>
           <p class="chip">Machine Learning</p>
           <p class="chip">Deep Learning (CNNs)</p>
           <p class="chip">NLP</p>
@@ -141,20 +129,19 @@
           <p class="chip">Pandas / NumPy</p>
         </div>
         <div class="card">
-          <h3>Backend & Tools</h3>
-          <p class="chip">Spring Boot</p>
-          <p class="chip">REST APIs</p>
-          <p class="chip">Git & GitHub</p>
-          <p class="chip">Jupyter</p>
-          <p class="chip">VS Code</p>
-          <p class="chip">Postman</p>
-        </div>
-        <div class="card">
-          <h3>Visualization</h3>
+          <h3>Visualization &amp; Tools</h3>
           <p class="chip">Tableau</p>
           <p class="chip">Power BI</p>
           <p class="chip">Matplotlib</p>
           <p class="chip">Excel</p>
+          <p class="chip">Git/GitHub</p>
+          <p class="chip">Postman</p>
+        </div>
+        <div class="card">
+          <h3>Foundations</h3>
+          <p class="chip">Mathematics &amp; Aptitude</p>
+          <p class="chip">Logical Reasoning</p>
+          <p class="chip">Cryptography (Basics)</p>
         </div>
       </div>
     </section>
