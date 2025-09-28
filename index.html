@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raj Karthik Manam • Portfolio</title>
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#38bdf8; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto,Inter,Arial;background:linear-gradient(180deg,#0b1220,#0f172a);color:var(--text);}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:980px;margin:auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    nav a{margin:0 10px}
+    .hero{padding:36px 0;border-bottom:1px solid #1f2937}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:16px 0}
+    .card{background:var(--card);border:1px solid #1f2937;border-radius:16px;padding:18px}
+    .chip{display:inline-block;border:1px solid #1f2937;border-radius:999px;padding:4px 10px;margin:4px 6px 0 0;color:var(--muted);font-size:12px}
+    footer{margin:40px 0;color:var(--muted);font-size:14px;text-align:center}
+    .btn{display:inline-block;background:var(--accent);color:#00121a;padding:10px 14px;border-radius:10px;font-weight:600}
+    .btn:hover{filter:brightness(1.05)}
+    h1,h2{margin:0 0 8px} h3{margin:8px 0} section{padding:28px 0;border-bottom:1px solid #1f2937}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Raj Karthik Manam</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="about">
+      <h2>About Me</h2>
+      <p style="color:#9ca3af">
+        Graduate student at USF. I build backend services with Spring Boot and explore NLP & data visualization.
+      </p>
+      <p><a class="btn" href="https://github.com/rajkarthikmanam" target="_blank" rel="noopener">GitHub Profile</a></p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Learning Portal — Spring Boot</h3>
+          <p>Layered Spring Boot app with JPA, MapStruct, BCrypt.</p>
+          <p><a href="https://github.com/rajkarthikmanam/learning-portal" target="_blank" rel="noopener">View on GitHub →</a></p>
+          <div><span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">PostgreSQL</span></div>
+        </article>
+        <article class="card">
+          <h3>Next-Word Prediction (NLP)</h3>
+          <p>Notebook-based model predicting the next word using deep learning.</p>
+          <p><a href="https://github.com/rajkarthikmanam/next-word-prediction" target="_blank" rel="noopener">View on GitHub →</a></p>
+          <div><span class="chip">Python</span><span class="chip">TensorFlow</span><span class="chip">NLP</span></div>
+        </article>
+        <article class="card">
+          <h3>US Education & Economic Analysis</h3>
+          <p>Tableau dashboards linking education, income, and unemployment.</p>
+          <p><a href="https://github.com/rajkarthikmanam/us-education-economic-analysis" target="_blank" rel="noopener">View on GitHub →</a></p>
+          <div><span class="chip">Tableau</span><span class="chip">Data Viz</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="cards">
+        <div class="card"><h3>Backend</h3><p class="chip">Java</p><p class="chip">Spring Boot</p><p class="chip">JPA/Hibernate</p><p class="chip">REST</p></div>
+        <div class="card"><h3>Data & ML</h3><p class="chip">Python</p><p class="chip">TensorFlow</p><p class="chip">Pandas</p><p class="chip">NLP</p></div>
+        <div class="card"><h3>Visualization</h3><p class="chip">Tableau</p><p class="chip">Matplotlib</p></div>
+        <div class="card"><h3>Tools</h3><p class="chip">Git/GitHub</p><p class="chip">VS Code</p><p class="chip">Postman</p></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:rajkarthikmanam@usf.edu">rajkarthikmanam@usf.edu</a></p>
+      <p>LinkedIn: <a href="#" target="_blank" rel="noopener">Add your LinkedIn link here</a></p>
+    </section>
+
+    <footer>© <span id="y"></span> Raj Karthik Manam</footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
