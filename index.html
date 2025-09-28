@@ -1,3 +1,4 @@
+<!-- v6 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,10 @@
   <title>Raj Karthik Manam • Portfolio</title>
   <style>
     :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#38bdf8; }
-    *{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto,Inter,Arial;background:linear-gradient(180deg,#0b1220,#0f172a);color:var(--text);}
-    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Inter,Arial;background:linear-gradient(180deg,#0b1220,#0f172a);color:var(--text);}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
     .wrap{max-width:980px;margin:auto;padding:24px}
     header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
     nav a{margin:0 10px}
@@ -17,14 +20,20 @@
     .chip{display:inline-block;border:1px solid #1f2937;border-radius:999px;padding:4px 10px;margin:4px 6px 0 0;color:var(--muted);font-size:12px}
     footer{margin:40px 0;color:var(--muted);font-size:14px;text-align:center}
     .btn{display:inline-block;background:var(--accent);color:#00121a;padding:10px 14px;border-radius:10px;font-weight:600}
-    .btn:hover{filter:brightness(1.05)}
-    h1,h2{margin:0 0 8px} h3{margin:8px 0} section{padding:28px 0;border-bottom:1px solid #1f2937}
+    .btn:hover{filter:brightness(1.05);text-decoration:none}
+    h1,h2{margin:0 0 8px}
+    h3{margin:8px 0}
+    section{padding:28px 0;border-bottom:1px solid #1f2937}
+    .subtitle{color:var(--muted);font-size:14px;margin-top:-4px}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <h1>Raj Karthik Manam</h1>
+      <div>
+        <h1>Raj Karthik Manam</h1>
+        <div class="subtitle">AIBA Master’s @ USF • Teaching Assistant • Backend, NLP & Data Visualization</div>
+      </div>
       <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -33,52 +42,101 @@
       </nav>
     </header>
 
+    <!-- ABOUT -->
     <section class="hero" id="about">
       <h2>About Me</h2>
       <p style="color:#9ca3af">
-        Graduate student at USF. I build backend services with Spring Boot and explore NLP & data visualization.
+        I’m a Master’s student in <strong>Artificial Intelligence & Business Analytics (AIBA)</strong> at the University of South Florida.
+        I also serve as a <strong>Teaching Assistant for Python for Business</strong>, helping students with coding concepts,
+        labs, and grading. My interests span <strong>backend development</strong>, <strong>NLP</strong>, and
+        <strong>data visualization</strong>: I build REST APIs with Spring Boot, experiment with next-word prediction models in Python,
+        and create dashboards to turn data into decisions. I’ve completed a backend internship (brief)
+        focused on Spring Boot and REST—useful experience that strengthened my fundamentals.
       </p>
-      <p><a class="btn" href="https://github.com/rajkarthikmanam" target="_blank" rel="noopener">GitHub Profile</a></p>
+      <p>
+        <a class="btn" href="https://github.com/rajkarthikmanam" target="_blank" rel="noopener">GitHub Profile</a>
+        &nbsp;&nbsp;
+        <a class="btn" href="https://www.linkedin.com/in/raj-karthik-manam-12418a282/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects">
       <h2>Projects</h2>
       <div class="cards">
         <article class="card">
           <h3>Learning Portal — Spring Boot</h3>
-          <p>Layered Spring Boot app with JPA, MapStruct, BCrypt.</p>
+          <p>Layered Spring Boot app with JPA, MapStruct, and BCrypt; clean REST endpoints and DTO mapping.</p>
           <p><a href="https://github.com/rajkarthikmanam/learning-portal" target="_blank" rel="noopener">View on GitHub →</a></p>
-          <div><span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">PostgreSQL</span></div>
+          <div>
+            <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">PostgreSQL</span>
+          </div>
         </article>
+
         <article class="card">
           <h3>Next-Word Prediction (NLP)</h3>
-          <p>Notebook-based model predicting the next word using deep learning.</p>
+          <p>Notebook-based model predicting the next word using tokenization and deep learning.</p>
           <p><a href="https://github.com/rajkarthikmanam/next-word-prediction" target="_blank" rel="noopener">View on GitHub →</a></p>
-          <div><span class="chip">Python</span><span class="chip">TensorFlow</span><span class="chip">NLP</span></div>
+          <div>
+            <span class="chip">Python</span><span class="chip">TensorFlow</span><span class="chip">NLP</span>
+          </div>
         </article>
+
         <article class="card">
           <h3>US Education & Economic Analysis</h3>
-          <p>Tableau dashboards linking education, income, and unemployment.</p>
+          <p>Tableau dashboards connecting education, income, and unemployment across U.S. states.</p>
           <p><a href="https://github.com/rajkarthikmanam/us-education-economic-analysis" target="_blank" rel="noopener">View on GitHub →</a></p>
-          <div><span class="chip">Tableau</span><span class="chip">Data Viz</span></div>
+          <div>
+            <span class="chip">Tableau</span><span class="chip">Data Viz</span>
+          </div>
         </article>
       </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills">
       <h2>Skills</h2>
       <div class="cards">
-        <div class="card"><h3>Backend</h3><p class="chip">Java</p><p class="chip">Spring Boot</p><p class="chip">JPA/Hibernate</p><p class="chip">REST</p></div>
-        <div class="card"><h3>Data & ML</h3><p class="chip">Python</p><p class="chip">TensorFlow</p><p class="chip">Pandas</p><p class="chip">NLP</p></div>
-        <div class="card"><h3>Visualization</h3><p class="chip">Tableau</p><p class="chip">Matplotlib</p></div>
-        <div class="card"><h3>Tools</h3><p class="chip">Git/GitHub</p><p class="chip">VS Code</p><p class="chip">Postman</p></div>
+        <div class="card">
+          <h3>Programming & Backend</h3>
+          <p class="chip">Java</p>
+          <p class="chip">Spring Boot</p>
+          <p class="chip">REST APIs</p>
+          <p class="chip">JPA / Hibernate</p>
+          <p class="chip">PostgreSQL</p>
+          <p class="chip">MapStruct</p>
+          <p class="chip">BCrypt</p>
+          <p class="chip">SQL</p>
+        </div>
+        <div class="card">
+          <h3>Data & AI</h3>
+          <p class="chip">Python</p>
+          <p class="chip">TensorFlow / Keras</p>
+          <p class="chip">Pandas</p>
+          <p class="chip">NumPy</p>
+          <p class="chip">scikit-learn</p>
+          <p class="chip">NLP / Text Processing</p>
+        </div>
+        <div class="card">
+          <h3>Visualization</h3>
+          <p class="chip">Tableau</p>
+          <p class="chip">Matplotlib</p>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <p class="chip">Git / GitHub</p>
+          <p class="chip">VS Code</p>
+          <p class="chip">Postman</p>
+          <p class="chip">Jupyter</p>
+        </div>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:rajkarthikmanam@usf.edu">rajkarthikmanam@usf.edu</a></p>
-      <p>LinkedIn: <a href="#" target="_blank" rel="noopener">Add your LinkedIn link here</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/raj-karthik-manam-12418a282/" target="_blank" rel="noopener">linkedin.com/in/raj-karthik-manam-12418a282</a></p>
     </section>
 
     <footer>© <span id="y"></span> Raj Karthik Manam</footer>
